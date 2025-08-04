@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #2f90b7;
+  color: #333;
+  line-height: 1.6;
+}
+header {
+  background: #005c99;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+.hero {
+  background: url('https://images.unsplash.com/photo-1588776814546-fcb24b1b56f8?auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+  color: #fff;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 2.5rem;
+}
+.hero .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  background: #0077cc;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.hero .btn:hover {
+  background: #005c99;
+}
+.sobre, .contato, .avaliacoes {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: #eef6f9;
+}
+.card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+  text-align: center;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.avaliacao {
+  max-width: 500px;
+  margin: 1rem auto;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 1rem auto;
+  gap: 1rem;
+}
+form input, form textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+form button {
+  padding: 0.8rem;
+  background: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+form button:hover {
+  background: #005c99;
+}
+.info {
+  margin-top: 2rem;
+}
+footer {
+  background: #005c99;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+.flutuante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: background 0.3s;
+}
+.flutuante:hover {
+  background: #005c99;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
